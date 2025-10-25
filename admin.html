@@ -165,6 +165,9 @@
         messageEl.innerHTML = '<div class="alert alert-success">تمت إضافة المشروع بنجاح!</div>';
         document.getElementById('projectForm').reset();
       }
+
+      const {  { user } } = await supabase.auth.getUser();
+      console.log("المستخدم الحالي:", user);
     });
 
     checkUser();
