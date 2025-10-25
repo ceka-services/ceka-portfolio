@@ -166,8 +166,6 @@
         document.getElementById('projectForm').reset();
       }
 
-      const {  { user } } = await supabase.auth.getUser();
-      console.log("المستخدم الحالي:", user);
     });
 
     checkUser();
